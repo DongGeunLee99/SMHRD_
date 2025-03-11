@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 2. 내부 스타일 시트 방식 : head 태그에 style 태그 사용 */
+        #no2 {
+            color: blue;
+            background-color: yellowgreen;
+        }
+    </style>
+
+    <!-- 3. 외부 스타일 시트 방식 : head 태그에 link 태그 사용
+    보안 유지를 위해 CSS 파일로 저장
+    link 태그가 쓰인 순서대로 적용
+    link - rel : 관계  href : 주소
+    -->
+    <link rel="stylesheet" href="ex22_외부style방식.css">
+
+    <!-- 4. import 방식 : style 태그에 @import로 css 적용
+    보안 유지를 위해 CSS 파일로 저장
+    css 적용 순서가 예측 불가능
+    -->
+    <style>
+        @import url("ex22_import방식.css");
+    </style>
+</head>
+<body>
+    <!-- 1. 인라인 방식 : html 태그에 직접 스타일 적용 -->
+    <h1 style="color: red; background-color: black;">1. 인라인 방식</h1>
+
+    <h1 id="no2">2. 내부 스타일 시트 방식</h1>
+    <h1 id="no3"">3. 외부 스타일 시트 방식</h1>
+    <h1 id="no4">4. import 방식</h1>
+</body>
+</html>

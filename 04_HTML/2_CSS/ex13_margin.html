@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --size : 100px;
+            --margin-unit : 100px;
+        }
+        div{
+            width: var(--size);
+            height: var(--size);
+        }
+        #red{
+            background-color: red;
+        }
+        #blue{
+            background-color: blue;
+            margin-left: calc(var(--margin-unit) * 1);
+        }
+        #green{
+            background-color: green;
+            margin-left: 200px;
+        }
+        #gray{
+            background-color: gray;
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="red"></div>
+    <div id="blue"></div>
+    <div id="green"></div>
+    <div id="gray"></div>
+</body>
+</html>

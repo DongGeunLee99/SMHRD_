@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        3) absolute : 절대적인 / 부모 요소 내에서 절대적인 위치를 지정
+            - 위치 속성이 활성화
+            - 기준 : 부모요소가 있다면 부모요소의 position 속성 값이
+                    static이 아닌 부모요소를 기준으로 위치
+                만약 부모요소 중에서 relative, absolute, fixed 요소가 없다면
+                body 요소를 기준으로 움직인다 (최상위 위치)
+        */
+        #parents{
+            height: 300px;
+            border: 10px solid black;
+            position: relative;
+        }
+        #child{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            position: absolute;
+            top: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="parents">
+        부모태그
+        <div id="child">absolute</div>
+    </div>
+</body>
+</html>

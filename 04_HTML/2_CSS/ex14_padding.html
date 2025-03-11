@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --size : 100px;
+        }
+        div{
+            width: var(--size);
+            height: var(--size);
+        }
+        #red{
+            background-color: red;
+            padding: 50px;
+        }
+        #green{
+            background-color: green;
+            padding: 20px;
+            box-sizing: border-box;
+            /* box-sizing
+                1) content-box : 기본 값(margin, border, padding 다 적용)
+                2) border-box : width, height가 margin을 제외하고
+                                    border, padding 포함 전체 너비/높이 지정
+             */
+        }
+        #yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="red">red</div>
+    <div id="green">green</div>
+    <div id="yellow">yellow</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* java수업을 들어온 선생님만 배경을 초록색으로 */
+        .java{
+            background-color: green;
+        }
+
+        /* htmlcss 수업을 들어온 선생님만 배경색을 노랑 */
+        #htmlcss{
+            background-color: yellow;
+        }
+
+        /* body를 기준으로 ul의 모든 자식 요소의 글씨 크기를 30px */
+        body > ul{
+            font-size: 30px;
+        }
+        /* class가 java인 요소중 li요소만 이텔릭체 */
+        li.java{
+            font-style: italic;
+        }
+        /* 첫번째 li를 기준으로 class가 java인 요소의 글씨를 두껍게 */
+        li~.java{
+            font-weight: bold;
+        }
+        /* class가 java인 p태그를 기준으로 id가 crawling인 요소의 글씨 색 */
+        p.java~#crawling{
+            color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>빅데이터 30차 과정</h3>
+    <ul>
+        <li class="java">채수민</li>
+        <p class="java">박병관</p>
+        <li class="java" id="htmlcss">임다이</li>
+        <li id="crawling">김민수</li>
+        <li id="db">조준용</li>
+    </ul>
+</body>
+</html>

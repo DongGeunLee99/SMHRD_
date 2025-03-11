@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        transition : 요소의 속성을 부드럽게 전환 시켜주는 기능
+        transition-duration : 실행 시간
+        transition-delay : 딜레이 시간
+        transition-property : 어떤 속성을 변형할 지
+        */
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            /* 몇 초동안 실행할 지 */
+            transition-duration: 2s;
+            /* 어떤 속성을 변형할 지 */
+            /* 요소에 직접 적용 : 마우스를 올릴때, 내릴때 모두 적용 */
+            transition-property: all;
+        }
+
+        .box:hover{
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            transition-delay: 1s;
+            /* 이벤트에 적용 : 마우스를 내릴 때는 적용 안됨 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --size : 100px;
+            --padding : 100px;
+        }
+        div{
+            width: var(--size);
+            height: var(--size);
+        }
+        #red{
+            background-color: red;
+            color: white;
+        }
+        #blue{
+            background-color: blue;
+            padding-left: var(--padding);
+            color: white;
+        }
+        #green{
+            background-color: green;
+            padding-left: calc(var(--padding)*2);
+            color: white;
+        }
+        #gray{
+            background-color: gray;
+            padding-left: calc(var(--padding)*3);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="red">BOX</div>
+    <div id="blue">BOX</div>
+    <div id="green">BOX</div>
+    <div id="gray">BOX</div>
+</body>
+</html>

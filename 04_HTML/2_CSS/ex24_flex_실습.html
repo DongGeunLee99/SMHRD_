@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: bisque;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .cardWrap {
+            background-color: aliceblue;
+            border: 7px solid white;
+            border-radius: 30px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .textSec{
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        /* 배경 이미지 넣는 방법 
+        background-image: url(이미지 경로);
+        width, height 지정 필요
+        */
+        .imgSec{
+            width: 300px;
+            height: 300px;
+
+            /* 배경 이미지 크기 조정 
+            cover : 이미지가 요소를 꽉 채우도록 크기 조정 (비율 유지)
+            contain : 이미지가 요소 안에 들어가도록 크기 조정 (비율 유지, 잘릴 수 있음)
+            auto : 이미지 원본 크기 유지 (원본)
+            */
+            background-size: cover;
+        }
+
+        .img_1{
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/main/a4b71e8b99743c93a7824331850b0a3d.png);
+        }
+        .img_2{
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/main/7f981fc6e7a526daee600f4cee803b43.png);
+        }
+        .img_3{
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/main/d56328637eaf86e3273ebc39c57aada7.png);
+        }
+        .img_4{
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/main/901f131644310c0eb356cbab7ecc4738.png);
+        }
+        .img_5{
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/main/1db88b4ce08086f487c72ef55344558a.png);
+        }
+        .img_6{
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/main/719e8584fd50151284b5ace3589f7a34.png);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 1 -->
+        <div class="cardWrap">
+            <div class="imgSec img_1"></div>
+            <div class="textSec">
+                <p>슈팅스타</p>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="cardWrap">
+            <div class="imgSec img_2"></div>
+            <div class="textSec">
+                <p>블루베리 파나코타</p>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="cardWrap">
+            <div class="imgSec img_3"></div>
+            <div class="textSec">
+                <p>31요거트</p>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="cardWrap">
+            <div class="imgSec img_4"></div>
+            <div class="textSec">
+                <p>바닐라</p>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="cardWrap">
+            <div class="imgSec img_5"></div>
+            <div class="textSec">
+                <p>나주배 소르베</p>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="cardWrap">
+            <div class="imgSec img_6"></div>
+            <div class="textSec">
+                <p>소금 우유 아이스크림</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

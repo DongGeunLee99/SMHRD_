@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{
+            width: 800px;
+            height: 800px;
+            animation-name: imgAni;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            background-size: cover;
+            background-position: center;
+        }
+        @keyframes imgAni{
+            from{
+                background-image: url(https://www.baskinrobbins.co.kr/upload/product/main/a4b71e8b99743c93a7824331850b0a3d.png);
+            }
+            to{
+                background-image: url(https://www.baskinrobbins.co.kr/upload/product/main/7f981fc6e7a526daee600f4cee803b43.png);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="img"></div>
+</body>
+</html>

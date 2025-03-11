@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        position : 요소의 위치를 배치하는 속성
+            1) static (기본 값) : 정적인
+                - 위치 속성이 비활성화
+
+            2) relative : 상대적인
+                - 위치 속성이 활성화
+                - 기준 : 원래 있던 위치에서 이동
+        
+        z-index : 요소의 순서를 지정하는 속성
+            - 숫자가 클수록 위에 배치
+            - 음수도 사용 가능        
+        */
+        div{
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        #orange{
+            background-color: orange;
+            top : 100px;
+            z-index: 3;
+        }
+        #tomato{
+            background-color: tomato;
+            left : 100px;
+            z-index: 2;
+        }
+        #green{
+            background-color: green;
+            left : 200px;
+            bottom: 100px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div id="orange"></div>
+    <div id="tomato"></div>
+    <div id="green"></div>
+</body>
+</html>

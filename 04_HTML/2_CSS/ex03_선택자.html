@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선택자 : 디자인이 될 대상(전체, 태그, 클래스, id) */
+        /* 전체 선택자 ( * ) :: 0 : html문서의 모든 요소*/
+        *{
+            color: tomato;
+        }
+        
+        /* 태그 선택자 :: 1 : html문서의 해당 요소 */
+        p{
+            color: slategray;
+        }
+        li{
+            color: cornflowerblue;
+        }
+        
+        /* id 선택자 (#id) :: 100 : - 선택자 중에서 '단 하나'만 지정해서 디자인 해주는 경우 
+                            - 한 문서에서 같은 태그에 id중복 불가
+                            - 로고, 검색창, 상단바 처럼 고유한 디자인을 할 때 사용
+                            */
+        #sake{
+            color: salmon;
+        }
+        #huru{
+            background-color: burlywood;
+        }
+        
+        /* 클래스 (.class) :: 10 : - 선택자들을 구분해서 지정해줘야 하는 경우 중에서
+                                여러 요소를 묶어서 디자인을 할 때 사용
+                            */
+        .hot{
+            color: blueviolet;
+        }
+        
+        /* 그룹 선택자 : 다양한 요소를 , 로 구분하여 요소 선택 */
+        h1,h2{
+            background-color: cornsilk;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS 활용하기</h1>
+    <p>웹 페이지를 디자인하는 스타일 시트 언어</p>
+
+    <ul>
+        <li>CSS 기본 구조</li>
+        <li>CSS 선택자</li>
+        <li>CSS 스타일</li>
+    </ul>
+
+    <hr>
+
+    <h2>오늘 뭐 먹지?</h2>
+    <p id = "sake">사케</p>
+    <p id = "huru" class="hot">오뎅탕</>
+    <p class="hot">샤브샤브</p>
+
+
+</body>
+</html>

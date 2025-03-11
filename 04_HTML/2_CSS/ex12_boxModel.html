@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --size : 100px;
+        }
+        div{
+            width: var(--size);
+            height: var(--size);
+        }
+        #red{
+            background-color: red;
+            margin: 50px;
+        }
+        #blue{
+            background-color: blue;
+            margin-left: 50px;
+            margin-bottom: 20px;    
+        }
+        /* margin 상쇄 현상
+            : 2개의 block 요소의 상하 margin이 겹쳤을 때
+                더 큰 margin으로 결합*/
+        #green{
+            background-color: green;
+            margin-top: 10px;
+        }
+        #gray{
+            background-color: gray;
+            margin: auto;
+            /* auto : 웹 페이지 정 가운데에 위치할 수 있게  */
+        }
+    </style>
+</head>
+<body>
+    <div id="red"></div>
+    <div id="blue"></div>
+    <div id="green"></div>
+    <div id="gray"></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* BoxModel
+        - 요소의 부피감을 결정
+        - width, height, ..
+        - margin : 경계선을 기준으로 바깥쪽 여백 지정 / 요소와 요소 사이
+            (margin : 4방향, margin-방향 : 특정 방향)
+        - padding : 경계선을 기준으로 안쪽 여백 지정 / 요소 안쪽 여백
+            (padding : 4방향, padding-방향 : 특정 방향)
+        - border : 경계선 지정
+            (border : 4방향, border-방향 : 특정 방향)
+            ex) 1px solid black
+         */
+
+        p,span{
+            width: 100px;
+            height: 100px;
+        }
+
+        p{
+            background-color: pink;
+            display: inline;
+        }
+        span{
+            background-color: cadetblue;
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 3px solid navy;
+        }
+
+
+</style>
+</head>
+<body>
+    
+    <p>p태그</p>
+    <p>p태그</p>
+    <p>p태그</p>
+
+    <span>span태그</span>
+    <span>span태그</span>
+    <span>span태그</span>
+
+</body>
+</html>

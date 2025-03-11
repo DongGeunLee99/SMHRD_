@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+        이미지 태그
+         : 웹 페이지에서 이미지를 보여주는 태그
+        필수 속성 : src(source)
+        사용 방법 : src = "이미지 경로"
+
+        -->
+        <p>
+            절대경로
+            : 어떤 페이지나 파일이 가진 고유한 경로
+        </p>
+        <!-- 외부 -->
+        <img src="https://blog.kakaocdn.net/dn/CoWU9/btrX1wnDAVK/hrQ77sJqaJU9EtGkqC1ZW0/img.png" width="300" alt="폭시">
+        <p>
+            상대경로
+            : 특정 위치를 기준으로 파일을 찾는 경로
+            -> 현재기준, 상위기준, 루트기준
+        </p>
+        <!-- 상위 -->
+        <img src="../img/free-icon-linux-2333464.png" width="1000" border="1" alt="팽귄">
+        <!-- 루트 -->
+        <img src="/1_HTML/img/free-icon-linux-2333464.png" alt="팽귄">
+        <!-- 현재 -->
+        <img src="./../img/free-icon-linux-2333464.png" alt="팽귄">
+</body>
+</html>

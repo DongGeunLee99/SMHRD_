@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+        공간분할태그
+        - 경계를 분할하거나 영역을 나늘 때 사용하는 태그 
+        - div, p, span
+        
+        display : 요소가 화면에 보이는 방식을 지정
+        - block
+            > 무조건 가로로 한 줄의 영역을 차지하는 속성
+            > div, p 등 기본 값이 block    
+            > width, height 조정 가능    
+            
+        - inline
+            > 컨텐츠까지만 크기로 삼는 속성
+            > span, a 등 기본 값이 inline
+            > width, height 조정 불가
+        - none
+        - flex
+        */
+        p,span{
+            width: 100px;
+            height: 100px;
+        }
+
+        p{
+            background-color: pink;
+            display: inline;
+        }
+        span{
+            background-color: cadetblue;
+            display: block;
+        }
+
+        .answer{
+            display: none;
+        }
+
+        /* class가 question인 요소 위에 마우스를 올리면
+            그 옆에 있는 class가 answer인 요소를 보이도록 */
+        .question:hover + .answer{
+            display: block;
+        }
+
+
+</style>
+</head>
+<body>
+
+    <p>p태그</p>
+    <p>p태그</p>
+    <p>p태그</p>
+
+    <span>span태그</span>
+    <span>span태그</span>
+    <span>span태그</span>
+
+    <div class="question">Q. 여러분들이 가장 좋아하는 음료는 무엇인가요?</div>
+    <div class="answer">A. 보리차</div>
+
+    <div class="question">Q. 여러분들의 MBTI는 무엇인가요?</div>
+    <div class="answer">A. ISFP</div>
+</body>
+</html>

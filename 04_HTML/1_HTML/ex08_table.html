@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        table 태그
+        : 여러 종류의 데이터를 표로 보여줄 때 사용
+    -->
+        <!-- 
+        표를 만드는 순서
+        1) <table></table>
+        2) 행 수 table row -> <tr></tr>
+        3) 헤더 -> table head -> <th></th>
+        4) 데이터 -> table data -> <td></td>
+
+        * 추가 기능
+            1) rowspan : 행 병합
+            2) colspan : 열 병합
+        -->
+        <table border="1 solid black">
+
+            <!-- caption : 표의 제목  -->
+
+            <caption>연구원 정보</caption>
+
+            <!-- 테이블의 head : th(table head) 
+                    굵게 표시, 가운데 정렬-->
+            <tr bgcolor="lightgray">
+                <th>나이</th>
+                <th>이름</th>
+                <th colspan="2">성별</th>
+                <th>비고</th>
+            </tr>
+            
+            <!-- 테이블의 data : td(table data) 
+                    테이블의 한 칸, 왼쪽 정렬-->
+            <tr>
+                <td align="center">27</td>
+                <td align="center">이동근</td>
+                <td rowspan="2">남자</td>
+            </tr>
+
+            <tr>
+                <td>01</td>
+                <td>길동이</td>
+            </tr>               
+
+        </table>
+        <br>
+        <br>
+        <table border="1 solid">
+
+            <caption>팀 정보</caption>
+
+            <tr style="background-color:rgb(183, 155, 247);">
+                <th>이름</th>
+                <th>나이</th>
+                <th>성별</th>
+
+            </tr>
+            
+            <tr>
+                <td align="center">이동근</td>
+                <td align="center">27</td>
+                <td rowspan="3">남자</td>
+            </tr>
+            <tr>
+                <td align="center">윤병민</td>
+                <td align="center">29</td>
+                <!-- <td rowspan="2">남자</td> -->
+            </tr>
+            <tr>
+                <td align="center">이세일</td>
+                <td align="center">31</td>
+                <!-- <td rowspan="2">남자</td> -->
+            </tr>
+            <tr>
+                <td align="center">김효진</td>
+                <td align="center">28</td>
+                <td>여자</td>
+            </tr>
+
+
+        </table>
+        <br>
+        <br>
+        <table border="1 solid">
+
+            <caption>고깃집</caption>
+
+            <tr style="background-color:rgb(183, 155, 247);">
+                <th>메뉴</th>
+                <th>가격</th>
+                <th>비고</th>
+
+            </tr>
+            
+            <tr>
+                <td align="center">삼겹살</td>
+                <td align="center">12000</td>
+                <td align="center" rowspan="4">처음 주문<br>2인분</td>
+            </tr>
+            <tr>
+                <td align="center">목살</td>
+                <td align="center">12000</td>
+            </tr>
+            <tr>
+                <td align="center">가브리살</td>
+                <td align="center">14000</td>
+            </tr>
+            <tr>
+                <td align="center">차돌</td>
+                <td align="center">12000</td>
+            </tr>
+            <tr>
+                <td align="center">냉면</td>
+                <td align="center">5000</td>
+                <td align="center" rowspan="2">후식</td>
+            </tr>
+            <tr>
+                <td align="center">누룽지</td>
+                <td align="center">5000</td>
+            </tr>
+            <tr>
+                <td align="center">공기</td>
+                <td align="center">2000</td>
+            </tr>
+
+
+        </table>
+</body>
+</html>

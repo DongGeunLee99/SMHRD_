@@ -1,0 +1,5 @@
+SQL> CONN SYSTEM/12345;
+Connected.
+SQL> @C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin\scott.sql;
+SQL> ALTER USER SCOTT IDENTIFIED BY 12345;
+User altered.

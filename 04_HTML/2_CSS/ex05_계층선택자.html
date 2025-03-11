@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        계층선택자 (tab) : 특정 위치의 요소를 계층적인 구조로 요소를 선택
+        1) 자손 선택자 - A B (B는 A의 자손)
+        2) 자식 선택자 - A>B (B는 A의 자식)
+        3) 근접 후행 선택자 - A+B (B는 A의 형제)
+        4) 후행 선택자 - A~B (A를 기준으로 자신을 포함하지 않는..)
+        */
+        
+        /* div기준, span선택 - 자손선택자 */
+        div span{
+            color: tomato;
+        }
+        
+        /* 1 + 100 */
+        div #spansel{
+        color: black;
+        }
+        
+        /* div기준, li선택 - 자손선택자 */
+        div li{
+            color: blue;
+        }
+
+        /* ol기준, span선택 - 자식선택자 */
+        ol>span{
+            color: hotpink;
+        }
+        
+        /* li기준 모든 li선택(본인 x) - 후행선택자 */
+        li~li{
+            color: green
+        }
+        
+        /* li기준 바로 옆의 li선택 - 근접후행선택자*/
+        li+li{
+            color: lime;
+        }
+        
+        /* 10 + 1 */
+        .firstli~li{
+            background-color: lightgoldenrodyellow;
+        }
+
+        /* 2번째 li기준 */
+        li:nth-child(2)~li{
+            color: tomato;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--
+        1) div를 기준으로 자손인 span색을 tomato로 변경
+        2) div를 기준으로 자손인 li의 색 blue
+        3) ol을 기준으로 자식인 span의 색을 hotpink
+        4) li를 기준으로 근접해서  붙어있는 li의 색 lime
+        5) li를 기준으로 형제관계인 li의 색 green
+    -->
+    <div>
+        <strong>지켜야 할 내용</strong>
+        <ol>
+
+            <li class="firstli">지각하지 않기</li>
+            <li>결석하지 않기</li>
+            <span id="spansel">( 불가피 할 땐 꼭 담임쌤에게 미리 말하기 )</span>
+            <li>쉬는시간 잘 지키기</li>
+        </ol>
+    </div>
+</body>
+</html>
