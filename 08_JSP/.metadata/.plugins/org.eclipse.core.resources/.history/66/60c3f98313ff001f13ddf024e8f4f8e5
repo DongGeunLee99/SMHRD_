@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>안녕클레오파트라</title>
+</head>
+<body>
+	<form action="Ex03_UserInfo" method="post">
+	      <h4>직업</h4>
+	      
+	      <select name="job">
+	         <option value="student">학생</option>
+	         <option value="tracher">선생님</option>
+	         <option value="developer">개발자</option>
+	      </select>
+
+	      <h4>성별</h4>
+	      <!-- radio : 중복 x -->
+	      <input type="radio" name="" value="m">남자
+	      <input type="radio" name="" value="w">여자
+
+	      <h4>취미</h4>
+
+	      <input type="">축구
+	      <input type="">야구
+	      <input type="">농구
+	
+	      <br><br>
+	      <input type="submit">
+	   </form>
+</body>
+</html>

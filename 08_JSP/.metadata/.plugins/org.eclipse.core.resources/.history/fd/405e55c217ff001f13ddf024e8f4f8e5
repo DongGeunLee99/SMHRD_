@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>안녕 클레오파트라 세상에서 제일 가는 포테이토 칩</title>
+</head>
+<body>
+	<form action="Ex03_UserInfo" method="post">
+	      <h4>직업</h4>
+	      
+	      <select name="job">
+	         <option value="student">학생</option>
+	         <option value="tracher">선생님</option>
+	         <option value="developer">개발자</option>
+	      </select>
+
+	      <h4>성별</h4>
+	      <!-- radio : 중복 x -->
+	      <input type="radio" name="gender" value="m">남자
+	      <input type="radio" name="gender" value="w">여자
+
+	      <h4>취미</h4>
+	      <!-- checkbox : 중복 o -->
+	      <input type="checkbox" name="hobby" value="soccer">축구
+	      <input type="checkbox" name="hobby" value="baseball">야구
+	      <input type="checkbox" name="hobby" value="basketball">농구
+	
+	      <br><br>
+	      <input type="submit">
+	   </form>
+</body>
+</html>
