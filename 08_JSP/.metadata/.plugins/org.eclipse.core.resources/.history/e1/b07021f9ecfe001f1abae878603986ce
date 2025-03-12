@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- login을 진행할 수 있도록 만들어보자 -->
+	<form action="Ex01_Login">
+	
+		<p>
+            ID : <input type="text" name="id"
+            placeholder="아이디를 입력하세요" autofocus>
+        </p>
+        <p>
+            PW : <input type="password" name="pw" maxlength="16">
+        </p>
+        <input type="submit" value="asd">
+	</form>
+
+</body>
+</html>

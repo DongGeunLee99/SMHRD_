@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<from action="Ex06_ChangeBg">
+		<input type="color" name="data">
+		<input type="submit" value="변경">
+	</from>
+</body>
+</html>

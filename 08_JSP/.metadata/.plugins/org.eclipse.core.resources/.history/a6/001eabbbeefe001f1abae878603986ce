@@ -1,0 +1,28 @@
+package com.smhrd.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/Ex01_Login")
+public class Ex01_Login extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String id = request.getParameter("id");
+		String pw = request.getParameter("pw");
+		
+		PrintWriter out = response.getWriter();
+		out.format("id : %s <br> pw : %s", id, pw);
+		out.print("id <br>"+id);
+		out.print("pw "+pw);
+	}
+
+}

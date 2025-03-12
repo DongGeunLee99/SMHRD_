@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- 주석 단축키 : ctrl + shift + / -->
+	<!-- 
+		데이터 전송을 위한 from 생성 ! 
+		1. action : 어디로 도착할 것인지 !
+		2. name : 보내는 데이터가 어떤 이름인지 !
+		3. submit : 어떤 시점에 데이터를 전송할 것인지 !
+	-->
+	<form action="">
+		DATA : <input type='text' name='data'>
+		<input type='submit'>
+	
+	
+	
+	
+	</form>
+
+
+
+
+
+</body>
+</html>
