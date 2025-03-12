@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!--
+	 form 사용시 전달하고자 하는 내용에 대한 방식을 설정할 수 있다.
+	 => method 속성에 방식을 연결
+	 1. Get
+	 2. Post
+	  -->
+
+	<form action="Ex02_GetPost" method="get">
+		name : <input type="text" name="gdata">
+		<input type="submit" value="get">
+	</form>
+
+	<form action="Ex02_GetPost" method="post">
+		name : <input type="text" name="pdata">
+		<input type="submit" value="get">
+	</form>
+
+</body>
+</html>
