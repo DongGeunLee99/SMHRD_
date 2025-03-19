@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="num">0</div>
+    <button class ="btn ">+1증가</button>
+    <button class ="btn ">-1증가</button>
+    <script>
+        num = document.getElementById("num")
+        btn = document.getElementsByClassName("btn")
+        cnt = 0
+
+        function sub(){
+            if (cnt > 0) {
+                --cnt
+            }
+            return cnt
+        }
+
+        btn[0].addEventListener("click", ()=>{ 
+            num.innerHTML = ++cnt 
+        } )
+        btn[1].addEventListener("click", ()=>{ 
+            // cnt = sub(cnt)   ==> sub매개변수에 cnt로 넣었을 경우
+            // num.innerHTML = cnt
+            num.innerHTML = sub()
+        } )
+
+        // btn[1].addEventListener("click", ()=>{ num.innerHTML = cnt == 0 ? cnt = 0 : --cnt } )
+
+        // 매개변수를 넣어주면 로컬함수로 작용하는데 없으니까 글로벌로 빠짐
+        // HTML 문자가 숫자로 기입하니까 숫자 타입으로 적용됨 => num.innerHTML++ 가능
+
+    </script>
+</body>
+</html>
+
+

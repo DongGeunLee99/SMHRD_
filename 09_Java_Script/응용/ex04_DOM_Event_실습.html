@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>클릭 한 번 해볼까요?</h1>
+    <button class="btn"> h1태그 생성</button>
+    <button class="btn"> a태그  생성</button>
+    <button class="btn"> ul태그 생성</button>
+    <div id="div">
+
+    </div>
+    <script>
+        div = document.getElementById("div")
+        btn = document.getElementsByClassName("btn")
+
+        btn[0].addEventListener("click", ()=>
+        { div.innerHTML += "<h1>행복한 JavaScript 수업</h1>" })
+        btn[1].addEventListener("click", ()=>
+        { div.innerHTML += "<a href='http://www.naver.com'>스마트 인재개발원 홈페이지로 가보자!</a><br>" })
+        btn[2].addEventListener("click", ()=>
+        { div.innerHTML += `<ul>
+                                <li>운비쌤</li>
+                                <li>함께하는</li>
+                                <li>자스수업</li>
+                            </ul>` })
+
+    </script>
+</body>
+</html>
