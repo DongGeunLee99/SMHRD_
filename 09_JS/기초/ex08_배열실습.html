@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        subject = []
+        score = []
+        sum = null;
+
+        temp = prompt("과목수를 입력하세요") // 반복해야 할 수
+        for (i = 0; i < temp; i++) { // 과목 이름을 반복해야 하는 만큼
+            subject[i] = prompt("점수를 입력할 과목명을 입력해주세요")
+        }
+
+        for (i = 0; i < temp; i++) { // 과목별 점수를 반복해야 하는 만큼
+            text = subject[i]+"의 점수 입력" // text로 한 번에 묶어서 프롬프트에 출력
+            score[i] = prompt(text)
+        }
+        
+        for (i = 0; i < temp; i++) { // 과목 수만큼 저장
+            sum += parseInt(score[i])
+        }
+
+        avg =  parseInt(sum/temp) // 평균 계산
+
+		document.write("<table border=1>");
+			document.write("<tr>"); // 첫번째 열
+				for (i = 0; i < temp; i++) { // 과목 순서대로 과목 이름 출력
+                    document.write("<td>", subject[i], "</td>");
+				}
+                document.write("<td>", "총합", "</td>"); // 총합
+                document.write("<td>", "평균", "</td>"); // 평균
+                document.write("</tr>"); // 첫번째 열 닫기
+                
+            document.write("<tr>"); // 두번째 열
+                for (i = 0; i < temp; i++) { // 과목 순서대로 점수 출력
+                    document.write("<td>", score[i],"</td>");
+                }
+                document.write("<td>", sum,"</td>"); // 총합 값
+                document.write("<td>", avg,"</td>"); // 평균 값
+            document.write("</tr>"); // 두번째 열 닫기
+        document.write("</table>");
+        </script>
+</body>
+</html>
