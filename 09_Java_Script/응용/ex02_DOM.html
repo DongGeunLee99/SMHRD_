@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class = 'good' id='h1'>수민쌤 최고</h1>
+    <h1 class = 'good'>보경쌤 최고</h1>
+
+    <script>
+        // h1 데이터 가져와서 콘솔에 출력
+        console.log(document.getElementsByTagName("h1")[0].innerHTML)
+        
+        // JS에서 태그를 꺼내올 수 있는 또다른 방법
+        h1 = document.querySelector("#h1") // 하나만
+        console.log(h1)
+        temp = document.querySelectorAll(".good") // 여러개 -> type : NodeList
+        console.log(temp[0], temp[1])
+
+    </script>
+</body>
+</html>

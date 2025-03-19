@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"> 이벤트에 대해 알아보자</h1>
+    <!-- onclick 속성을 직접적으로 사용할 때는, 반드시 함수를 호출 -->
+    <button onclick="btnClick()" id="btn">클릭</button>
+    <button id="btn2">클릭2</button>
+    <button id="btn3">클릭3</button>
+    <script>
+        // 이벤트란? : 웹 페이지에 client가 하는 모든 행위
+        //  ex) 키보드, 마우스
+        // JS에서 이벤트를 처리하는 방법
+
+        // 1) 태그에 직접적으로 속성을 통해 처리
+        function btnClick(){ alert(document.getElementById("h1").innerHTML) }
+        // 2) JS코드 안쪽에서 onclick 속성을 통해 처리
+        btn2 = document.getElementById("btn2")
+        btn2.onclick = () => { alert(document.getElementById("h1").innerHTML) }
+        // 2-1 태그안에 있는 onclick 속성에 함수 추가
+        btn2.onclick = btnClick; // 소괄호를 넣으면 호출됨
+        // 3) 이벤트리스너(핸들러)를 통해서 처리
+        // 3-1 이벤트를 추가하고 싶은 태그 가져오기
+        btn3 = document.getElementById("btn3")
+        // 3-2 이벤트리스너 추가하기    :    addEventListener("이벤트명", "함수")
+
+        //  이벤트 리스너란? : 어떤 이벤트가 들어오는지 확인하는 상태
+                        // --> 이벤트가 들어왔을 때 실행시켜줌
+        btn3.addEventListener("click", ()=>{ alert(document.getElementById("h1").innerHTML) })
+
+        /*
+        이벤트리스너 추천
+        1) 이벤트리스너 기능이 더 최신
+        2) onclick 속성을 overwrite되기 때문에 여러 기능을 넣을 수 없다
+        */
+
+
+    </script>
+</body>
+</html>
