@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="name">김혜수</h1>
+        <h2 class="team">이동근</h2>
+        <h2 class="team">박진우</h2>
+        <h2 class="team">박남규</h2>
+        <h2 class="team">노승현</h2>
+    </div>
+
+
+    <script>
+        // DOM
+        // html문서 내부에 들어있는 요소의 접근을 도와줌
+        h1 = document.getElementById("name")
+        console.log(h1)
+        h2 = document.getElementsByClassName("team")
+        console.log(h2)
+        h1.innerHTML = "다른이름"
+        // 태그에 접근해서 안쪽에 들어있는 텍스트를 바꿀 수 있는 방법
+        // 1) innerHTML -> 태그도 넣을 수 있음
+        // 2) innerText -> 글자만 넣을 수 있음
+
+
+    </script>
+</body>
+</html>

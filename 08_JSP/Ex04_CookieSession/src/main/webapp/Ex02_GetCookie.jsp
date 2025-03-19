@@ -14,8 +14,12 @@
 	Cookie[] cookies = request.getCookies();
 	// 반복문을 사용하여 전체 쿠키값 가져오기
 	for(Cookie c : cookies){ // 배열의 타입으로 가져오기
-		out.print(c.getName() + " / "+c.getValue()+"<br>");
+		if(c.getName().equals("test1")){
+			out.print(c.getName() + " / "+c.getValue()+"<br>");
+		}
 	}
 	%>
+	
+	<a href="Ex03_RemoveCookie.jsp">쿠키 삭제</a>
 </body>
 </html>

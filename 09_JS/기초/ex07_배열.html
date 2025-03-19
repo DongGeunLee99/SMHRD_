@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 배열 선언
+        var arr = [];
+        let arr_ = new Array();
+
+
+        // 2. 배열에 데이터 추가하기
+        arr[0] = 1;    // 인덱스 번호를 지정해서 데이터를 추가하는 게 가능
+        arr[2] = 2;    // 잘못된 로직을 작성하면, 중간에 empty(결측치) 발생할 수 있다.
+
+        arr.push('1');  // 가장 마지막 인덱스에 데이터를 순차적으로 추가
+        arr.push('2', 3, true, false);
+
+
+        // 3. 배열안에 들어있는 데이터에 접근하기
+        console.log(arr[1]);
+        
+        
+        // 4. 그 외 기능
+        arr.slice(0, 2);    // 슬라이싱
+        arr.splice(1, 1);   // 1번 인덱스에서 1개 지움
+        arr.pop();          // 끝 인덱스 삭제
+        console.log(arr);
+
+    </script>
+</body>
+</html>

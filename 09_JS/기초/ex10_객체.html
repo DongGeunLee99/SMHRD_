@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 객체 - 속성과 함수로 구성된 하나의 자료형
+        // 1. 객체 선언 방법
+        // python dictionary와 유사한 구조
+        people = {
+            name : "이름",
+            age : 20,
+            eat : () => {
+                console.log("밥먹기")
+            }
+        }
+
+        console.log(people)
+        // 2. 객체 안에 들어있는 속성, 메소드 접근 방법
+        console.log(people.name)
+        console.log(people.eat())
+        
+        people.mbti = "ISFP"
+        // 객체 안에 존재하지 않는 key추가 가능
+        //  -> const를 사용해 선언하여 변경 불가능하게 할 수 있다.
+
+
+
+
+    </script>
+</body>
+</html>
