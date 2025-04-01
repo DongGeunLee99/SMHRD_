@@ -36,6 +36,12 @@ const Ex02 = () => {
                 좋아요 {likeNum}개
             </span>
         </p>
+        {/* public 폴더 내 이미지 접근
+        static(정적인) 파일들은 public내에 저장
+        */}
+        <img width='300px' src='/img/img1.gif'></img>
+        <img width='300px' src='https://www.moti.co.kr/data/item/1698367778/thumb-67CU64KY64KY_7I2464Sk7J28_01_600x600.png'></img>
+        
     </div>
   )
 }
