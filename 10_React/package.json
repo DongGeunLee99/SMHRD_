@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@testing-library/react": "^16.2.0",
+    "echarts": "^5.6.0",
+    "echarts-for-react": "^3.0.2"
+  }
+}
