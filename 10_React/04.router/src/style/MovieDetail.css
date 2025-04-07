@@ -1,0 +1,33 @@
+.movie-detail {
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Alpha 값이 0.8인 경우, 약간 투명한 검정색 */
+
+}
+
+.movie-detail button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.movie-detail button:hover {
+    background-color: #0056b3;
+}
+
+.movie-detail img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.movie-detail p {
+    font-size: 1.6em;
+}
