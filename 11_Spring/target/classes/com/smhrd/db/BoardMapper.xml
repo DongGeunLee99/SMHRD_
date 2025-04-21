@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.db.BoardMapper">
+
+	<insert id="insert" parameterType="com.smhrd.model.BoardDTO">
+		insert into Board(title, writer, filename, content) values(#{title}, #{writer}, #{filename}, #{content})
+	</insert>
+	
+	<select id="boardSelect" resultType="com.smhrd.model.BoardDTO">
+		select * from Board
+	</select>
+	
+	<select id="detail" resultType="com.smhrd.model.BoardDTO" parameterType="int">
+		select * from Board where num = #{num}
+	</select>
+	
+	<delete id="delete" parameterType="int">
+		delete from Board where num = #{num}
+	</delete>
+
+</mapper>
