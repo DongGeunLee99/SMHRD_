@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="kr.bigdata.web.mapper.BoardMapper">
+
+  <select id="selectAll" resultType="Board">
+    select * from board ORDER BY IDX ASC
+    <!-- select * from board ORDER BY IDX DESC -->
+  </select>
+ 
+  <select id="selectData" resultType="Board" parameterType="SearchCriteria">
+    <!-- SELECT * FROM board WHERE #{filter} LIKE '%' || #{searchContent} || '%' -->
+    SELECT * FROM board
+    <include refid="selectOption"></include>
+  </select>
+  
+  <sql id="selectOption">
+  	<if test="filter=='WRITER'">
+	  WHERE WRITER LIKE '%'||#{searchContent}||'%'
+	</if>
+  	<if test="filter=='TITLE'">
+	  WHERE TITLE LIKE '%'||#{searchContent}||'%'
+	</if>
+  	<if test="filter=='CONTENT'">
+	  WHERE CONTENT LIKE '%'||#{searchContent}||'%'
+	</if>
+  </sql>
+  
+  <insert id="upDate" parameterType="Board">
+	INSERT INTO BOARD(IDX, TITLE, WRITER, CONTENT)
+	VALUES (BOARD_IDX.NEXTVAL, #{title}, #{writer}, #{content})
+  </insert>
+    
+</mapper>
